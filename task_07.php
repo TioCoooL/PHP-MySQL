@@ -43,14 +43,15 @@
                     echo '<tr class="w3-hover-blue">';
                     echo "<td>$y</td>";
                     echo "<td><img src='$avatar_url' alt='Avatar' class='w3-circle' style='width:50px; height:50px;'></td>";
-
+                    
                     echo "<td>" . $row['userid'] . "</td>";
 
                     echo "<td>" . $row['passcode'] . "</td>";
 
                     echo '<td>';
-                    echo '<a href="#' . $row['userid'] . '" class="glyphicon glyphicon-folder-open" style="margin-right: 15px;"></a>';
-                    echo '<a href="#" class="glyphicon glyphicon-trash"></a>';
+                    echo '<a href="task_07_profile.php?id=' . $row['userid'] . '" class="glyphicon glyphicon-folder-open" style="margin-right: 15px;"></a>';
+                    echo '<a href="#' . $row['userid'] . '" class="glyphicon glyphicon-pencil" style="margin-right: 15px;"></a>';
+                    echo '<a href="users-delete7.php?userid=' . $row['userid'] . '" class="glyphicon glyphicon-trash"></a>';
                     echo '</td>';
                     echo '</tr>';    
                     
